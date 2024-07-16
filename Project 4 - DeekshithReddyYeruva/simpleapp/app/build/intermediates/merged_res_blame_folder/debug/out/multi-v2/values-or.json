@@ -1,0 +1,128 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.simpleapp-mergeDebugResources-67:/values-or/values-or.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\dyeruva\\.gradle\\caches\\transforms-3\\83cf593ad36391ee132da6f44330026f\\transformed\\ui-1.4.0\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,202,289,381,481,567,644,742,830,917,987,1057,1135,1217,1287,1370,1437",
+                        "endColumns": "96,86,91,99,85,76,97,87,86,69,69,77,81,69,82,66,118",
+                        "endOffsets": "197,284,376,476,562,639,737,825,912,982,1052,1130,1212,1282,1365,1432,1551"
+                    },
+                    "to": {
+                        "startLines": "29,30,50,51,53,55,56,59,60,61,62,63,64,66,68,69,70",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2869,2966,5419,5511,5682,5852,5929,6265,6353,6440,6510,6580,6658,6830,7001,7084,7151",
+                        "endColumns": "96,86,91,99,85,76,97,87,86,69,69,77,81,69,82,66,118",
+                        "endOffsets": "2961,3048,5506,5606,5763,5924,6022,6348,6435,6505,6575,6653,6735,6895,7079,7146,7265"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dyeruva\\.gradle\\caches\\transforms-3\\b68a2cc168d368001ea8561676d2eb17\\transformed\\play-services-base-18.0.1\\res\\values-or\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,300,457,585,698,849,980,1090,1196,1359,1468,1625,1754,1900,2053,2114,2182",
+                        "endColumns": "106,156,127,112,150,130,109,105,162,108,156,128,145,152,60,67,82",
+                        "endOffsets": "299,456,584,697,848,979,1089,1195,1358,1467,1624,1753,1899,2052,2113,2181,2264"
+                    },
+                    "to": {
+                        "startLines": "32,33,34,35,36,37,38,39,41,42,43,44,45,46,47,48,49",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3139,3250,3411,3543,3660,3815,3950,4064,4314,4481,4594,4755,4888,5038,5195,5260,5332",
+                        "endColumns": "110,160,131,116,154,134,113,109,166,112,160,132,149,156,64,71,86",
+                        "endOffsets": "3245,3406,3538,3655,3810,3945,4059,4169,4476,4589,4750,4883,5033,5190,5255,5327,5414"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dyeruva\\.gradle\\caches\\transforms-3\\9cc0b765caf38179c734d10b72e03aed\\transformed\\material3-1.0.0\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,141,212",
+                        "endColumns": "85,70,83",
+                        "endOffsets": "136,207,291"
+                    },
+                    "to": {
+                        "startLines": "31,52,54",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "3053,5611,5768",
+                        "endColumns": "85,70,83",
+                        "endOffsets": "3134,5677,5847"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dyeruva\\.gradle\\caches\\transforms-3\\3a065e497cdad6c2376dca36d93b561c\\transformed\\play-services-basement-18.0.0\\res\\values-or\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "135",
+                        "endOffsets": "330"
+                    },
+                    "to": {
+                        "startLines": "40",
+                        "startColumns": "4",
+                        "startOffsets": "4174",
+                        "endColumns": "139",
+                        "endOffsets": "4309"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dyeruva\\.gradle\\caches\\transforms-3\\2ff6359da35c3edc386a9f650480b099\\transformed\\appcompat-1.6.1\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,224,334,441,527,631,751,830,911,1002,1095,1198,1293,1393,1486,1581,1677,1768,1858,1947,2057,2161,2267,2378,2482,2600,2763,2869",
+                        "endColumns": "118,109,106,85,103,119,78,80,90,92,102,94,99,92,94,95,90,89,88,109,103,105,110,103,117,162,105,89",
+                        "endOffsets": "219,329,436,522,626,746,825,906,997,1090,1193,1288,1388,1481,1576,1672,1763,1853,1942,2052,2156,2262,2373,2477,2595,2758,2864,2954"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,65",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,224,334,441,527,631,751,830,911,1002,1095,1198,1293,1393,1486,1581,1677,1768,1858,1947,2057,2161,2267,2378,2482,2600,2763,6740",
+                        "endColumns": "118,109,106,85,103,119,78,80,90,92,102,94,99,92,94,95,90,89,88,109,103,105,110,103,117,162,105,89",
+                        "endOffsets": "219,329,436,522,626,746,825,906,997,1090,1193,1288,1388,1481,1576,1672,1763,1853,1942,2052,2156,2262,2373,2477,2595,2758,2864,6825"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dyeruva\\.gradle\\caches\\transforms-3\\eed4e682118935a0691da9f3c5da41b2\\transformed\\navigation-ui-2.3.5\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,172",
+                        "endColumns": "116,120",
+                        "endOffsets": "167,288"
+                    },
+                    "to": {
+                        "startLines": "57,58",
+                        "startColumns": "4,4",
+                        "startOffsets": "6027,6144",
+                        "endColumns": "116,120",
+                        "endOffsets": "6139,6260"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\dyeruva\\.gradle\\caches\\transforms-3\\0e2111bda17921a3e330548840228749\\transformed\\core-1.9.0\\res\\values-or\\values-or.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "67",
+                        "startColumns": "4",
+                        "startOffsets": "6900",
+                        "endColumns": "100",
+                        "endOffsets": "6996"
+                    }
+                }
+            ]
+        }
+    ]
+}

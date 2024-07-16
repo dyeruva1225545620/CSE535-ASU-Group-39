@@ -1,0 +1,56 @@
+%%%%%%%%% Fire Base Values %%%%%%%%%%%%%%%%%%%%%%%%
+Hr=80;%from firebase server
+Rr=6;%from firebase server
+BMI=21;%from firebase server
+Sleep_duration=8;%from firebase server
+Intoxication_level=0.2;%from firebase server
+avg_speed=35;%from firebase server
+load("MemberDecel200.mat");
+%%%%%%%%%%%%%% fuzzy for switching %%%%%%%%%%%%%%%%
+fis = readfis('ReactionTimeFuzzy.fis');
+inputValues = [BMI, Sleep_duration, Intoxication_level];
+output = evalfis(fis, inputValues);
+additionalTr = output(1);
+Baseline_Tr=0.01*(Hr/Rr);
+Tr=additionalTr+Baseline_Tr;
+%%%%%%%%%%%%%%% Initial Values %%%%%%%%%%%%%%%%%%%%%%
+initSpeedA=12;
+speeddiff= initSpeedA-avg_speed;
+rc=zeros(2,1);
+rc(1)=(speeddiff/40)+0.5;
+rc(2)=0.5-(speeddiff/40);
+decelLim=200*rc(1)+150*rc(2);
+decelLim=decelLim*(-1);
+initSpeedB=40;
+%Autonomous simulation
+load_system('LaneMaintainSystem3Car.slx')
+set_param('LaneMaintainSystem3Car/VehicleKinematics/Saturation','LowerLimit',num2str(decelLim))
+set_param('LaneMaintainSystem3Car/VehicleKinematics/vx','InitialCondition',num2str(initSpeedB))
+set_param('LaneMaintainSystem3Car/CARA/VehicleKinematics/Saturation','LowerLimit',num2str(decelLim))
+set_param('LaneMaintainSystem3Car/CARA/VehicleKinematics/vx','InitialCondition',num2str(initSpeedA))
+simModelB = sim('LaneMaintainSystem3Car.slx');
+arrayLength = length(simModelB.ax1.Data);
+t=0.01;
+for i=2:arrayLength
+decelerationA=(simModelB.vx1.Data(i-1)-simModelB.vx1.Data(i))/t;
+distanceAB=simModelB.sx1.Data(i);
+speeddiff=simModelB.vx1.Data(i)-avg_speed;
+rc=zeros(2,1);
+rc(1)=(speeddiff/40)+0.5;
+rc(2)=0.5-(speeddiff/40);
+estdec=200*rc(1)+150*rc(2);
+%fuzzy logic
+fis = readfis('dynamicfuzzy.fis');
+inputValues = [distanceAB, speeddiff, decelerationA];
+output = evalfis(fis, inputValues);
+carDecelerationOutput = output(1);
+fis = readfis('dynamicswitching.fis');
+inputValues = [carDecelerationOutput, Tr];
+output = evalfis(fis, inputValues);
+switching = output(1);
+if switching > 0.5
+    fprintf("Switching needed");
+    break
+end
+end
+if switching

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CM</string>
+    <string name="start_latitude_hint">Start Latitude</string>
+    <string name="start_longitude_hint">Start Longitude</string>
+    <string name="end_latitude_hint">End Latitude</string>
+    <string name="end_longitude_hint">End Longitude</string>
+    <string name="check_workload">Check Workload</string>
+
+
+
+    //Add ons
+    <string name="google_map_api_key" translatable="false">AIzaSyDXhDVwJD4wA0LtUdopqKvc_-JgAOnOTj0</string>
+    <string name="destination_address" translatable="false">Destination Address</string>
+    <string name="source_address" translatable="false">Source Address</string>
+    <string name="image" translatable="false">Image</string>
+    <string name="hybrid_map" translatable="false">Hybrid Map</string>
+    <string name="satellite_map" translatable="false">Satellite Map</string>
+    <string name="terrain_map" translatable="false">Terrain Map</string>
+    <string name="normal_map" translatable="false">Normal Map</string>
+
+</resources>

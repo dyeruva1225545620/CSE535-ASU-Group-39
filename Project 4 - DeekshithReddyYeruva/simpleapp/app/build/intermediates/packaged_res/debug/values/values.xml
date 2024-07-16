@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="light_blue">#ADD8E6</color>
+    <color name="lighter_blue">#4AA8E8</color>
+    <color name="off_white">#F0F0F0</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="your_blue_color">#3498db</color>
+    <string name="app_name">simpleapp</string>
+    <string name="dia_shield">DiaShield</string>
+    <string name="enter_destination_location">Enter Destination Location</string>
+    <string name="enter_start_location">Enter Start Location</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_symptom_prompt">Select a Symptom</string>
+    <string name="upload_button">UPLOAD SYMPTOMS</string>
+    <style name="Theme.Simpleapp" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@color/off_white</item>
+        <item name="colorPrimary">@color/lighter_blue</item>
+
+        
+    </style>
+</resources>

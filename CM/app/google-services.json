@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "421372533941",
+    "project_id": "shubhammcomp",
+    "storage_bucket": "shubhammcomp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421372533941:android:66c4c9c045e3c5fdeff2fc",
+        "android_client_info": {
+          "package_name": "com.example.cm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA30hB_lo2J6IdCTlEbE3cXYixkXMZBwvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

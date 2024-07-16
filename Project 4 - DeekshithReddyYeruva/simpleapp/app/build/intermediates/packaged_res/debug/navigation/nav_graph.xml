@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/activity1Fragment">
+    <fragment
+        android:id="@+id/activity1Fragment"
+        android:name="com.example.simpleapp.Activity1fragment"
+        android:label="Activity1fragment"
+        >
+
+
+        <!-- Define the navigation action to go from activity1Fragment to activity2Fragment -->
+        <action
+            android:id="@+id/action_activity1Fragment_to_activity2Fragment"
+            app:destination="@id/activity2Fragment" />
+        <action
+            android:id="@+id/action_activity1Fragment_to_activity3Fragment"
+            app:destination="@id/activity3Fragment" />
+        <action
+            android:id="@+id/action_activity1Fragment_to_activity5Fragment"
+            app:destination="@id/activity5Fragment" />
+
+    </fragment>
+
+    <!-- Define the destination fragment (activity2Fragment) -->
+    <fragment
+        android:id="@+id/activity2Fragment"
+        android:name="com.example.simpleapp.Activity2fragment"
+        android:label="Activity2fragment">
+        <!-- You can specify any additional attributes for activity2Fragment here -->
+    </fragment>
+    <fragment
+        android:id="@+id/activity3Fragment"
+        android:name="com.example.simpleapp.project3task"
+        android:label="Activity2fragment">
+        <!-- You can specify any additional attributes for activity2Fragment here -->
+    </fragment>
+    <fragment
+        android:id="@+id/activity5Fragment"
+        android:name="com.example.simpleapp.project5_task1"
+        android:label="Activity5fragment">
+
+    </fragment>
+
+</navigation>
